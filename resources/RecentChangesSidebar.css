@@ -1,0 +1,37 @@
+#recent-changes-sidebar {
+    padding: 10px;
+}
+
+#recent-changes-list {
+    list-style: none;
+    padding: 0;
+}
+
+#recent-changes-list li {
+    margin-bottom: 10px;
+}
+
+#p-recent-changes .vector-menu-heading:after {
+    content: '';
+    position: relative;
+    left: 0.5em;
+    margin-bottom: 0;
+    display: inline-block;
+    background-color: #3b7a07;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+}
+
+#p-recent-changes .rc-sidebar-item {
+    display: grid;
+    grid: 1fr / 1fr;
+    position: relative;
+    font-size: 0.75em;
+    margin: 0.5em 0.25em 0 0;
+}
+#p-recent-changes .rc-sidebar-page {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

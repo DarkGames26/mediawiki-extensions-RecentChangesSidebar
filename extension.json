@@ -1,0 +1,49 @@
+{
+    "name": "RecentChangesSidebar",
+    "version": "1.0.0",
+    "author": [
+        "Dark"
+    ],
+    "url": "https://github.com/tu_usuario/mediawiki-extensions-RecentChangesSidebar",
+    "descriptionmsg": "recentchangessidebar-desc",
+    "license-name": "MIT",
+    "type": "other",
+    "Hooks": {
+        "BeforePageDisplay": "RecentChangesSidebarHooks::onBeforePageDisplay"
+    },
+    "MessagesDirs": {
+        "RecentChangesSidebar": [
+            "i18n"
+        ]
+    },
+    "ResourceModules": {
+        "ext.RecentChangesSidebar": {
+            "scripts": [
+                "resources/moment.min.js",
+                "resources/RecentChangesSidebar.js"
+            ],
+            "styles": [
+                "resources/RecentChangesSidebar.css"
+            ],
+            "dependencies": [
+                "mediawiki.api",
+                "jquery"
+            ],
+            "targets": [
+                "desktop",
+                "mobile"
+            ]
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "",
+        "remoteExtPath": "RecentChangesSidebar"
+    },
+    "AutoloadClasses": {
+        "RecentChangesSidebarHooks": "includes/RecentChangesSidebarHooks.php"
+    },
+    "manifest_version": 2,
+    "requires": {
+        "MediaWiki": ">= 1.39.0"
+    }
+}
